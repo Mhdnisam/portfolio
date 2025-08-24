@@ -633,8 +633,13 @@ section {
 .skill-item {
     background-color: var(--bg-primary);
     border-radius: 15px;
-    padding: 25px 15px;
+    padding: 25px 8px;
+    align-items: center;   /* centers horizontally */
+    justify-content: center;
     text-align: center;
+    width: 150px;   /* fixed card width */
+    min-height: 160px; /* keeps consistent height */
+    /* overflow-wrap: break-word; */
     transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
     border: 2px solid transparent;
@@ -655,6 +660,7 @@ section {
 .skill-name {
     font-weight: 600;
     color: var(--text-primary);
+    /* word-wrap: break-word; */
 }
 
 /* Certifications Section */
